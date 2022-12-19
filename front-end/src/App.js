@@ -4,6 +4,7 @@ import Home from './components/Home'
 import Store from './components/Store'
 import About from './components/About'
 import Navbar from "./components/Navbar";
+import Register from "./components/register";
 import ShoppingCarteProvider from './context/ShoppingCarteContext'
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/store" element={<Store />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<About  />} />
+        <Route path="/reg" element={<Register />} />
       </Routes>
    </Container>
    </ShoppingCarteProvider>
